@@ -16,8 +16,4 @@ $formCheck->passwordCheck($_POST['password']);
 
 $getErrorMsg = $formCheck->getError;
 
-if (!empty($getErrorMsg)) {
-  header('Location: index.php');
-  exit;
-}
 include "../view/confirmationHtml.php";
