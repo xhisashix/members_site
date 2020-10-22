@@ -18,6 +18,7 @@
       <input type="text" name="furigana" placeholder="ふりがな">
       <input type="text" name="mail" placeholder="メール">
       <input type="password" name="password" placeholder="パスワード">
+      <input type="password" name="verification_for_password" placeholder="確認用パスワード">
       <select name="sex" id="">
         <option value="men">男性</option>
         <option value="girl">女性</option>

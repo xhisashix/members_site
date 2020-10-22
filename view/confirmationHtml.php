@@ -23,10 +23,12 @@
       <?php endif ?>
       <?php if (empty($getErrorMsg)) : ?>
         <div class="confirmation">
-          <p><?php echo $_POST["name"] ?></p>
-          <p><?php echo $_POST["furigana"] ?></p>
-          <p><?php echo $_POST["mail"]; ?></p>
-          <p><?php echo $_POST["password"]; ?></p>
+          <p>名前：<?php echo $_POST["name"] ?></p>
+          <p>フリガナ：<?php echo $_POST["furigana"] ?></p>
+          <p>メールアドレス：<?php echo $_POST["mail"]; ?></p>
+          <p>パスワード：<?php echo $_POST["password"]; ?></p>
+          <p>性別：<?php echo $_POST["sex"]; ?></p>
+          <p>職業：<?php echo $_POST["work"]; ?></p>
         </div>
       <?php endif ?>
     </div>
@@ -34,9 +36,10 @@
     <?php if (!empty($getErrorMsg)) : ?>
       <form action="confirmation.php" method="post">
         <input type="name" name="name" placeholder="名前" value="<?php echo $_POST['name']; ?>">
-        <input type="text" name="furigana" placeholder="ふりがな">
-        <input type="text" name="mail" placeholder="メール">
+        <input type="text" name="furigana" placeholder="ふりがな" value="<?php echo $_POST['furigana']; ?>">
+        <input type="text" name="mail" placeholder="メール" value="<?php echo $_POST['mail']; ?>">
         <input type="password" name="password" placeholder="パスワード">
+        <input type="password" name="verification_for_password" placeholder="確認用パスワード">
         <select name="sex" id="">
           <option value="men">男性</option>
           <option value="girl">女性</option>
