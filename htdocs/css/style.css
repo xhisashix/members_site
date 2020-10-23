@@ -17,12 +17,12 @@ form {
 }
 
 input {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 select,
 option {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 button {
@@ -34,4 +34,16 @@ button {
   background-color: rgba(253, 123, 123, 0.933);
   padding: 10px;
   border-radius: 10px;
+}
+
+.pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass > input {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
