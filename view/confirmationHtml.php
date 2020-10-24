@@ -16,6 +16,7 @@
       </h1>
       <?php if (!empty($getErrorMsg)) : ?>
         <div class="error">
+          <h3>※下記内容を修正してください</h3>
           <?php foreach ($getErrorMsg as $value) : ?>
             <p><?php echo $value; ?></p>
           <?php endforeach; ?>
@@ -38,7 +39,11 @@
         <input type="name" name="name" placeholder="名前" value="<?php echo $_POST['name']; ?>">
         <input type="text" name="furigana" placeholder="ふりがな" value="<?php echo $_POST['furigana']; ?>">
         <input type="text" name="mail" placeholder="メール" value="<?php echo $_POST['mail']; ?>">
-        <input type="password" name="password" placeholder="パスワード">
+        <input type="password" id="password" name="password" placeholder="パスワード">
+        <div class="pass" style="display: flex;">
+          <input type="checkbox" id="password-check">
+          <p>パスワードを表示する</p>
+        </div>
         <input type="password" name="verification_for_password" placeholder="確認用パスワード">
         <select name="sex" id="">
           <option value="men">男性</option>
@@ -54,7 +59,7 @@
     <?php endif ?>
   </main>
 
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

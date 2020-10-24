@@ -1,4 +1,8 @@
-body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,31 +13,40 @@ main {
   margin-left: 30px;
   width: 70%;
   margin: 0 auto;
+  background-color: #bdc3c7;
 }
 form {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 input {
   margin-top: 15px;
+  padding: 10px;
 }
 
 select,
-option {
-  margin-top: 15px;
-}
-
+option,
 button {
-  margin-top: 20px;
+  margin-top: 15px;
+  width: 200px;
 }
 
 .error {
   margin: 0 auto;
-  background-color: rgba(253, 123, 123, 0.933);
-  padding: 10px;
+  background-color: rgba(252, 152, 152, 0.933);
+  border: 5px solid #c0392b;
+  padding: 15px;
   border-radius: 10px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.error h3 {
+  margin-bottom: 15px;
 }
 
 .pass {
@@ -45,5 +58,5 @@ button {
 .pass > input {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: auto 0;
 }
