@@ -11,7 +11,7 @@
 <body>
   <main>
     <div>
-      <h1>
+      <h1 class="title">
         確認画面
       </h1>
       <?php if (!empty($getErrorMsg)) : ?>

@@ -15,6 +15,11 @@ main {
   margin: 0 auto;
   background-color: #bdc3c7;
 }
+
+.title {
+  text-align: center;
+  padding-top: 20px;
+}
 form {
   display: flex;
   flex-direction: column;

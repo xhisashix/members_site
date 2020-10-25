@@ -10,7 +10,7 @@
 
 <body>
   <main>
-    <div>
+    <div class="title">
       <h1>会員登録</h1>
     </div>
     <form action="confirmation.php" method="post">
